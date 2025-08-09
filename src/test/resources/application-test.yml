@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=Oracle;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        show_sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: test@example.com
+    password: test
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret-key: test-secret-key-for-testing-purposes-only-must-be-at-least-512-bits-which-is-64-bytes-so-this-is-long-enough
+  access-expire-time: 86400000  # 1 day in milliseconds
+  refresh-expire-time: 604800000 # 7 days in milliseconds
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    site.praytogether: DEBUG

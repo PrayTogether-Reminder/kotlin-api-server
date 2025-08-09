@@ -1,0 +1,27 @@
+<configuration>
+  <property name="LOG_ROOT_PATH" value="${user.home}/log-pray"/>
+  <property name="LOG_FILE_NAME" value="springboot-log"/>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOG_ROOT_PATH}/%d{yyyy/MM}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}.log
+      </fileNamePattern>
+      <maxHistory>30</maxHistory>
+      <totalSizeCap>3GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="CONSOLE"/>
+  </root>
+</configuration>

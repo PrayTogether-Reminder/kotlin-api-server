@@ -1,0 +1,234 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+
+### Spring Boot ###
+*.log
+*.log.*
+logs/
+log/
+app.log
+spring.log
+
+### Java/Kotlin ###
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+*.hprof
+java_pid*.hprof
+
+### VS Code ###
+.vscode/
+*.code-workspace
+.history/
+
+### Mac OS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+### Environment & Secrets ###
+.env
+.env.local
+.env.*.local
+*.env
+application-local.properties
+application-local.yml
+application-local.yaml
+application-prod.properties
+application-prod.yml
+application-prod.yaml
+application-dev.properties
+application-dev.yml
+application-dev.yaml
+
+### Firebase Admin SDK (중요한 보안 파일) ###
+*firebase-adminsdk*.json
+firebase-credentials.json
+service-account-key.json
+serviceAccountKey.json
+
+### Wallet & Certificates ###
+**/dev-wallet/
+**/main-wallet/
+**/prod-wallet/
+wallet/
+*.p12
+*.pfx
+*.key
+*.pem
+*.crt
+*.cer
+
+### Database ###
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+*.trace.db
+
+### Package Files ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.tar
+*.bz2
+
+### Node (if using frontend) ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+### Testing ###
+coverage/
+.nyc_output
+*.lcov
+test-results/
+test-output/
+allure-results/
+
+### Temporary Files ###
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*.bak
+*.backup
+*.old
+
+### Editor directories and files ###
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+### Claude AI ###
+.claude/
+claude.md
+CLAUDE.md
+
+### Build directories ###
+target/
+bin/
+dist/
+lib/
+
+### Documentation ###
+docs/_build/
+
+### Package managers ###
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Kotlin ###
+.kotlin/
+
+### Custom project specific ###
+# Firebase 설정 파일들 (모든 경로에서 무시)
+pray-together-firebase-adminsdk*.json
+# 로그 파일들
+/app.log
+/spring.log
+# Java heap dump files
+java_pid*.hprof
+*.hprof
+
+### CI/CD ###
+.gitlab-ci-local/
+.github/workflows/local/
+
+### Docker ###
+.dockerignore
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+
+### Miscellaneous ###
+*.orig
+.cache
+.history
+.svn/
+.bzr/
+.hg/
